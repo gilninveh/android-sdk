@@ -50,7 +50,14 @@ Pixoneye SDK require permissions, add the following to AndroidManifest:
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
 # ProGuard
-When enabling proguard, proguard rules should be added. example can be found here:
+When enabling proguard, proguard rules should be added. example can be found [here](https://github.com/pixoneye/android-sdk/blob/master/PixoneyeIntegrationSample/app/pixoneye-sdk-proguard-rules.pro)
 
-[link here](https://s3-eu-west-1.amazonaws.com/pixoneyesdk/release/proguard-rules.pro)
+# Usage
+In order to start Pixoneye service use:
+```
+Pixoneye.start(Context, <App_id>, <Api_key>, <User_id>);
+```
+App id and Api key created when you create your add in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
+User id is the user in your system.
 
+for more details check the sample project.
