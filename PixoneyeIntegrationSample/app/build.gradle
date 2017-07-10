@@ -29,7 +29,7 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'pixoneye-sdk-proguard-rules.pro'
         }
     }
@@ -45,8 +45,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
 
+
     //Add pixoneye sdk
     compile 'com.pixoneye:pixoneye-android-sdk:4.0.0@aar'
+//    compile(name: 'pixoneye-android-sdk-4.0.0', ext: 'aar')
 
     //Requeired by Pixoneye sdk:
     compile 'com.google.code.gson:gson:2.7'
@@ -54,4 +56,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.7.0'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile 'com.google.android.gms:play-services-ads:11.0.1'
+
 }

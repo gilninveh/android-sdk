@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pixoneye Integration Sample</string>
+    <string name="banner_ad_unit_id">/147189301/header</string>
 </resources>
