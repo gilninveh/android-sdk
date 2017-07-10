@@ -7,7 +7,7 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
   2. Minimum android-api 14.
  
 # Download
-Download the latest AAR or grabe via Maven:
+Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.0%2Fpixoneye-android-sdk-4.0.0.aar) or grabe via Maven:
 ```
 <dependency>
   <groupId>com.pixoneye</groupId>
@@ -50,7 +50,14 @@ Pixoneye SDK require permissions, add the following to AndroidManifest:
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
 # ProGuard
-When enabling proguard, proguard rules should be added. example can be found here:
+When enabling proguard, proguard rules should be added. example can be found [here](https://github.com/pixoneye/android-sdk/blob/master/PixoneyeIntegrationSample/app/pixoneye-sdk-proguard-rules.pro)
 
-[link here](https://s3-eu-west-1.amazonaws.com/pixoneyesdk/release/proguard-rules.pro)
+# Usage
+In order to start Pixoneye service use:
+```
+Pixoneye.start(Context, <App_id>, <Api_key>, <User_id>);
+```
+App id and Api key created when you create your add in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
+User id is the user in your system.
 
+for more details check the sample project.
