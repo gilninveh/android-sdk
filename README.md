@@ -2,21 +2,14 @@
 Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the data and the creation of recommendation, targeting and personalization - to be deployed on any app. Once installed, our SDK will provide analytic tools and data about all users’ behavior.
 
 ## Android SDK integration 
-*  Requirements
+###  Requirements
   1. Android Studio.
   2. Minimum android-api 14.
  
-# Download
-Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.0%2Fpixoneye-android-sdk-4.0.0.aar) or grabe via Maven:
-```
-<dependency>
-  <groupId>com.pixoneye</groupId>
-  <artifactId>pixoneye-android-sdk</artifactId>
-  <version>4.0.0</version>
-  <type>pom</type>
-</dependency>
-```
-or Gradle:
+### Download
+Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.0%2Fpixoneye-android-sdk-4.0.0.aar) 
+
+OR Gradle:
 ```
 add to repositories:
 repositories {
@@ -29,9 +22,19 @@ dependencies {
   compile 'com.pixoneye:pixoneye-android-sdk:4.0.0@aar'
 }
 ```
-# Requirements
-* Dependencies 
-Pixoneye SDK require depndencies, Add the following to your app dependencies:
+
+OR Maven:
+```
+<dependency>
+  <groupId>com.pixoneye</groupId>
+  <artifactId>pixoneye-android-sdk</artifactId>
+  <version>4.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+ 
+### Dependencies
+
 ```
 dependencies {
     compile 'com.google.code.gson:gson:2.7'
@@ -42,22 +45,22 @@ dependencies {
 }
 ```
 
-* Permissions
+### Permissions
 Pixoneye SDK require permissions, add the following to AndroidManifest:
 ```
   <uses-permission android:name="android.permission.WAKE_LOCK"/>
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
-# ProGuard
+### ProGuard
 When enabling proguard, proguard rules should be added. example can be found [here](https://github.com/pixoneye/android-sdk/blob/master/PixoneyeIntegrationSample/app/pixoneye-sdk-proguard-rules.pro)
 
-# Usage
-In order to start Pixoneye service use:
+## Usage
+In order to start Pixoneye simply:
 ```
 Pixoneye.start(Context, <App_id>, <Api_key>, <User_id>);
 ```
 App id and Api key created when you create your add in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
 User id is the user in your system.
 
-for more details check the sample project.
+for more details check the sample project. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
