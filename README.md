@@ -1,4 +1,4 @@
-## Pixoneye Android SDK
+# Pixoneye Android SDK
 Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the data and the creation of recommendation, targeting and personalization - to be deployed on any app. Once installed, our SDK will provide analytic tools and data about all users’ behavior.
 
 ## Android SDK integration 
@@ -10,14 +10,17 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
 Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.0%2Fpixoneye-android-sdk-4.0.0.aar) 
 
 OR Gradle:
+
+Add to repositories at project level
 ```
-add to repositories:
 repositories {
        maven {
             url  "http://dl.bintray.com/pixoneye/Android-SDK"
         }
     }
-add to app dependencies:
+```
+Add to dependencies at app level
+```
 dependencies {
   compile 'com.pixoneye:pixoneye-android-sdk:4.0.0@aar'
 }
