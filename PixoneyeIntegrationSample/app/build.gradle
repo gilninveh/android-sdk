@@ -44,17 +44,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
-
-
     //Add pixoneye sdk
-    compile 'com.pixoneye:pixoneye-android-sdk:4.0.0@aar'
-//    compile(name: 'pixoneye-android-sdk-4.0.0', ext: 'aar')
-
-    //Requeired by Pixoneye sdk:
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.squareup.okhttp3:okhttp:3.7.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.google.android.gms:play-services-ads:11.0.1'
-
+    compile 'com.pixoneye:pixoneye-android-sdk:4.0.1'
 }

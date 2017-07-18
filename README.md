@@ -7,7 +7,7 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
   2. Minimum android-api 14.
  
 # Download
-Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.0%2Fpixoneye-android-sdk-4.0.0.aar) or grabe via Maven:
+Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.1%2Fpixoneye-android-sdk-4.0.1.aar) or grabe via Maven:
 ```
 <dependency>
   <groupId>com.pixoneye</groupId>
@@ -26,12 +26,12 @@ repositories {
     }
 add to app dependencies:
 dependencies {
-  compile 'com.pixoneye:pixoneye-android-sdk:4.0.0@aar'
+  compile 'com.pixoneye:pixoneye-android-sdk:4.0.1'
 }
 ```
 # Requirements
 * Dependencies 
-Pixoneye SDK require depndencies, Add the following to your app dependencies:
+Pixoneye SDK require depndencies, which will be added by gradle, exlude them if you use them in your project:
 ```
 dependencies {
     compile 'com.google.code.gson:gson:2.7'
