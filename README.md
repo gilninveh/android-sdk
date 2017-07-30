@@ -4,7 +4,7 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
 ## Android SDK integration 
 ###  Requirements
   1. Android Studio.
-  2. Minimum android-api 14.
+  2. Minimum android-api 16.
  
 # Download
 Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.1%2Fpixoneye-android-sdk-4.0.1.aar) or grabe via Maven:
