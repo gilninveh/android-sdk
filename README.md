@@ -4,9 +4,8 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
 ## Android SDK integration 
 ###  Requirements
   1. Android Studio.
-  2. Minimum android-api 14.
+  2. Minimum android-api 16.
  
-<<<<<<< HEAD
 # Download
 Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.2%2Fpixoneye-android-sdk-4.0.2.aar) or grabe via Maven:
 ```
@@ -18,14 +17,12 @@ Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file
 </dependency>
 ```
 or Gradle:
-=======
 ### Download 
 Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.1%2Fpixoneye-android-sdk-4.0.1.aar) 
 
 OR Gradle:
 
 Add to repositories at project level
->>>>>>> d910af18d366515d577feee6ea7407f310b4d978
 ```
 repositories {
        maven {
@@ -39,25 +36,13 @@ dependencies {
   compile 'com.pixoneye:pixoneye-android-sdk:4.0.1'
 }
 ```
-<<<<<<< HEAD
+
 # Requirements
 * Dependencies 
 Pixoneye SDK require depndencies, which will be added by gradle, exlude them if you use them in your project:
-=======
-
-OR Maven:
-```
-<dependency>
-  <groupId>com.pixoneye</groupId>
-  <artifactId>pixoneye-android-sdk</artifactId>
-  <version>4.0.0</version>
-  <type>pom</type>
-</dependency>
-```
  
 ### Dependencies
 
->>>>>>> d910af18d366515d577feee6ea7407f310b4d978
 ```
 dependencies {
     compile 'com.google.code.gson:gson:2.7'
