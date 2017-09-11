@@ -12,15 +12,11 @@ Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file
 <dependency>
   <groupId>com.pixoneye</groupId>
   <artifactId>pixoneye-android-sdk</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.2</version>
   <type>pom</type>
 </dependency>
 ```
-or Gradle:
-### Download 
-Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.1%2Fpixoneye-android-sdk-4.0.1.aar) 
-
-OR Gradle:
+Or Gradle:
 
 Add to repositories at project level
 ```
@@ -33,7 +29,7 @@ repositories {
 Add to dependencies at app level
 ```
 dependencies {
-  compile 'com.pixoneye:pixoneye-android-sdk:4.0.1'
+  compile 'com.pixoneye:pixoneye-android-sdk:4.0.2'
 }
 ```
 
