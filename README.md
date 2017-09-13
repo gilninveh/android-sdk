@@ -1,5 +1,5 @@
 # Pixoneye Android SDK
-Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the data and the creation of recommendation, targeting and personalization - to be deployed on any app. Once installed, our SDK will provide analytic tools and data about all users’ behavior.
+Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the collection of data and the creation of recommendation, targeting and personalization - to be deployed on any app. Once installed, our SDK will provide data & analytic tools for understanding users’ behavior.
 
 ## Android SDK integration 
 ###  Requirements
@@ -34,10 +34,9 @@ dependencies {
 ```
 
 # Requirements
+### Dependencies
 * Dependencies 
 Pixoneye SDK require depndencies, which will be added by gradle, exlude them if you use them in your project:
- 
-### Dependencies
 
 ```
 dependencies {
@@ -60,11 +59,11 @@ Pixoneye SDK require permissions, add the following to AndroidManifest:
 When enabling proguard, proguard rules should be added. example can be found [here](https://github.com/pixoneye/android-sdk/blob/master/PixoneyeIntegrationSample/app/pixoneye-sdk-proguard-rules.pro)
 
 ## Usage
-In order to start Pixoneye simply:
+In order to start Pixoneye, simply call:
 ```
 Pixoneye.start(Context, <App_id>, <Api_key>, <User_id>);
 ```
-App id and Api key created when you create your add in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
+App id and Api key are created when you create your app in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
 User id is the user in your system.
 
-for more details check the sample project. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
+for more details check the sample project:. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
