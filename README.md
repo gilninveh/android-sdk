@@ -6,7 +6,7 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
   1. Android Studio.
   2. Minimum android-api 16.
  
-# Download
+### Add the SDK to your project
 Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.2%2Fpixoneye-android-sdk-4.0.2.aar) or grabe via Maven:
 ```
 <dependency>
@@ -59,11 +59,33 @@ Pixoneye SDK require permissions, add the following to AndroidManifest:
 When enabling proguard, proguard rules should be added. example can be found [here](https://github.com/pixoneye/android-sdk/blob/master/PixoneyeIntegrationSample/app/pixoneye-sdk-proguard-rules.pro)
 
 ## Usage
-In order to start Pixoneye, simply call:
+* In order to start Pixoneye, simply call:
 ```
 Pixoneye.start(Context, <App_id>, <Api_key>, <User_id>);
 ```
 App id and Api key are created when you create your app in [Pixoneye dashboard](https://dashboard.pixoneye.com/#/)
 User id is the user in your system.
 
+* Enable Pixoneye logs
+Enabling Pixoneye logs is simple by using 
+```
+Pixoneye.setVerbose(true);
+```
+before starting pixoneye.
+
+* target audience
+Getting an item from the Pixoneye recomendation system
+```
+Pixoneye.getBestItem(Context <App_id>, <Api_key>, <AD_UNIT_ID>, onGetBestItemResult)
+```
+Getting multiple recomendations:
+```
+Pixoneye.getBestItems(Context <App_id>, <Api_key>, ArrayList<AD_UNIT_ID>, onGetBestItemsResult)
+```
+Returns a dictionary with AdUnitId to PixCampaign object
+```
+{adUnitID:String,
+campaignID:String,
+trackingID:String}
+```
 for more details check the sample project:. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
