@@ -88,4 +88,6 @@ Returns a dictionary with AdUnitId to PixCampaign object
 campaignID:String,
 trackingID:String}
 ```
-for more details check the sample project:. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
+The campaginID is used to target the ad.
+
+For more details check the sample project:. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
