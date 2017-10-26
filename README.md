@@ -2,36 +2,7 @@
 Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the collection of data and the creation of recommendation, targeting and personalization - to be deployed on any app. Once installed, our SDK will provide data & analytic tools for understanding users’ behavior.
 
 ## Android SDK integration 
-###  Requirements
-  1. Android Studio.
-  2. Minimum android-api 16.
- 
-### Add the SDK to your project
-Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.3%2Fpixoneye-android-sdk-4.0.3.aar) or grabe via Maven:
-```
-<dependency>
-  <groupId>com.pixoneye</groupId>
-  <artifactId>pixoneye-android-sdk</artifactId>
-  <version>4.0.3</version>
-  <type>pom</type>
-</dependency>
-```
-Or Gradle:
 
-Add to repositories at project level
-```
-repositories {
-       maven {
-            url  "http://dl.bintray.com/pixoneye/Android-SDK"
-        }
-    }
-```
-Add to dependencies at app level
-```
-dependencies {
-  compile 'com.pixoneye:pixoneye-android-sdk:4.0.3'
-}
-```
 
 # Requirements
 ### Dependencies
@@ -90,4 +61,3 @@ trackingID:String}
 ```
 The campaginID is used to target the ad.
 
-For more details check the sample project:. [Sample project](https://github.com/pixoneye/android-sdk/tree/master/PixoneyeIntegrationSample)
