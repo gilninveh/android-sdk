@@ -5,6 +5,37 @@ Pixoneye's SDK (Software Development Kit) is the on-device tool that allows the 
 
 
 # Requirements
+###  Requirements
+1. Android Studio.
+2. Minimum android-api 16.
+
+### Add the SDK to your project
+Download the [latest AAR](https://bintray.com/pixoneye/Android-SDK/download_file?file_path=com%2Fpixoneye%2Fpixoneye-android-sdk%2F4.0.3%2Fpixoneye-android-sdk-4.0.4.aar) or grabe via Maven:
+```
+<dependency>
+<groupId>com.pixoneye</groupId>
+<artifactId>pixoneye-android-sdk</artifactId>
+<version>4.0.4</version>
+<type>pom</type>
+</dependency>
+```
+Or Gradle:
+
+Add to repositories at project level
+```
+repositories {
+      maven {
+      url  "http://dl.bintray.com/pixoneye/Android-SDK"
+      }
+      }
+      ```
+      Add to dependencies at app level
+      ```
+      dependencies {
+      compile 'com.pixoneye:pixoneye-android-sdk:4.0.4'
+      }
+      ``
+
 ### Dependencies
 * Dependencies 
 Pixoneye SDK require depndencies, which will be added by gradle, exlude them if you use them in your project:
