@@ -45,5 +45,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //Add pixoneye sdk
-    compile 'com.pixoneye:pixoneye-android-sdk:4.0.3'
+    compile 'com.pixoneye:pixoneye-android-sdk:4.0.4'
 }
